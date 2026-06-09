@@ -13,6 +13,8 @@
     <p>
       <!-- if no user logged-in, display signup and login links -->
       <!-- else, if user logged-in, display user name and logout link -->
+       <%= @current_user["first_name"] %>
+      |
       <a href="/users/new">Sign Up</a>
       |
       <a href="/login">Login</a>
