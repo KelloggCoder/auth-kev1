@@ -24,9 +24,10 @@ class SessionsController < ApplicationController
 end
       
 
+
   def destroy
-    # logout the user
-    flash["notice"] = "Goodbye."
-    redirect_to "/login"
+  flash["notice"] = "Goodbye."
+  session["user_id"] = nil
+  redirect_to "/sessions/new"
   end
 end

@@ -18,4 +18,6 @@ Rails.application.routes.draw do
 
   # Landing page (aka root route)
   # get("/", {:controller => "", :action => ""})
+
+
 end
